@@ -1,6 +1,10 @@
 # RoboMaster AI 问答机器人
 
-RoboMaster赛事直播页AI问答机器人，基于RAG + Claude API实现智能问答。
+RoboMaster赛事直播页AI问答机器人，基于RAG + DeepSeek API实现智能问答。
+
+## 在线演示
+
+**[点击体验 Demo](https://frontend-psi-nine-29.vercel.app)**
 
 ## 功能特性
 
@@ -148,9 +152,16 @@ curl -X POST http://localhost/api/chat \
 
 - 前端：React + TailwindCSS
 - 后端：Python FastAPI
-- RAG：sentence-transformers + FAISS
-- LLM：Claude API (claude-3-haiku)
-- 部署：Docker + Nginx
+- RAG：TF-IDF + jieba 中文分词
+- LLM：DeepSeek API
+- 部署：Vercel (前端) + Railway (后端)
+
+## 在线部署
+
+| 服务 | 平台 | 地址 |
+|------|------|------|
+| 前端 | Vercel | https://frontend-psi-nine-29.vercel.app |
+| 后端 | Railway | https://robomaster-chatbot-production.up.railway.app |
 
 ## 问答策略
 
