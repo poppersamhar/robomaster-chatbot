@@ -1,3 +1,3 @@
-from .claude import ClaudeClient, get_claude_client
+from .deepseek import DeepSeekClient, get_deepseek_client
 
-__all__ = ['ClaudeClient', 'get_claude_client']
+__all__ = ['DeepSeekClient', 'get_deepseek_client']

@@ -9,13 +9,13 @@ class Retriever:
         self.use_llm = use_llm
         self.llm_client = None
 
-        # 尝试初始化 Claude
+        # 尝试初始化 DeepSeek
         if self.use_llm:
             try:
-                from ..llm import get_claude_client
-                self.llm_client = get_claude_client()
+                from ..llm import get_deepseek_client
+                self.llm_client = get_deepseek_client()
             except Exception as e:
-                print(f"Claude initialization failed: {e}")
+                print(f"DeepSeek initialization failed: {e}")
                 self.use_llm = False
 
         # 敏感词列表
