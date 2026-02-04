@@ -15,7 +15,7 @@ function FloatingButton({ onClick, isOpen }) {
       {isOpen ? (
         <div className="relative">
           <img
-            src="/mascot.png"
+            src="/mascot.svg"
             alt="小粉助手"
             className="w-16 h-16 object-contain drop-shadow-lg"
           />
@@ -27,7 +27,7 @@ function FloatingButton({ onClick, isOpen }) {
         </div>
       ) : (
         <img
-          src="/mascot.png"
+          src="/mascot.svg"
           alt="小粉助手"
           className="w-16 h-16 object-contain drop-shadow-lg animate-bounce-slow"
         />

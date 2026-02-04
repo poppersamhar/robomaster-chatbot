@@ -76,9 +76,7 @@ function ChatBot() {
         {/* 头部 */}
         <div className="bg-gradient-to-r from-pink-500 to-pink-600 px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <span className="text-pink-500 text-lg">🤖</span>
-            </div>
+            <img src="/mascot.svg" alt="小粉助手" className="w-8 h-8" />
             <span className="text-white font-semibold">小粉助手</span>
           </div>
           <button
